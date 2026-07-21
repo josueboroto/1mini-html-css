@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+   <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -112,14 +113,21 @@
             <h2>Travelzo<span>.</span></h2>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Log In</li>
-                    <li>Join</li>
-                    <li>About US</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href="">About US</a></li>
                 </ul>
             </nav>
-            <input type="search" name="" id="" placeholder="
-            search">
+            <div class="input-search">
+                <input type="search" placeholder=" ">
+                <div class="label">
+                    <a href="#" class="search"><ion-icon name="search-outline"></ion-icon></a>
+                    <label for="search">search</label>
+                </div>
+                
+            </div>
+            
         </div>
         <div class="down">
             <div class="left">
@@ -135,16 +143,46 @@
             </div>
             <div class="right">
                 <h1>Create new account<span>.</span></h1>
-
-                <input type="text" placeholder="Username">
-                <div class="row">
-                    <input type="text" id="row" placeholder="Firstname">
-                    <input type="text" id="row" placeholder="Last name">
+                <form action="">
+                    <div class="input-container">
+                    <input type="text" id="username"  placeholder=" " >
+                    <a href="#" class="person"><ion-icon name="person"></ion-icon></a>
+                    <label for="username">Username</label>
                 </div>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+               
+                <div class="row">
+                    <div class="input-container">
+                        <input type="text" id="first-name"  placeholder=" " >
+                        <a href="#" class="card"><ion-icon name="card"></ion-icon></a>
+                        <label for="first-name">Firstname</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="last-name"  placeholder=" " >
+                        <a href="#" class="card">
+                            <ion-icon name="card"></ion-icon></a>
+                        <label for="last-name">Last name</label>   
+                    </div>
+                    
+                </div>
+                <div class="input-container">
+                    <input type="email" id="email" placeholder=" ">
+                    <a href="#" class="person">
+                        <ion-icon name="wallet"></ion-icon>
+                    </a>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" placeholder=" ">
+                    <a href="#" class="person">
+                        <ion-icon name="eye"></ion-icon>
+                    </a>
+                    <label for="password">Password</label>
+                </div>
+                
                 <p>Already A memmber? <a href="">Log in</a></p>
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
+                </form>
+                
             </div>
         </div>
     </div>
